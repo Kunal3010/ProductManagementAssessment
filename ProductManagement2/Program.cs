@@ -48,7 +48,7 @@ namespace ProductManagement2
             {
                 table.AddRow(ds.Tables[0].Rows[i][0].ToString(), ds.Tables[0].Rows[i][1].ToString(), ds.Tables[0].Rows[i][2].ToString(), ds.Tables[0].Rows[i][3].ToString(), ds.Tables[0].Rows[i][4].ToString());
             }
-            AnsiConsole.Write(new FigletText("Customer Details").Centered().Color(Color.Khaki1));
+            AnsiConsole.Write(new FigletText("Product Details").Centered().Color(Color.Khaki1));
             AnsiConsole.Write(table);
         }
 
