@@ -92,7 +92,7 @@ namespace ProductManagement2
             {
                 table.AddRow(ds.Tables[0].Rows[i][0].ToString(), ds.Tables[0].Rows[i][1].ToString(), ds.Tables[0].Rows[i][2].ToString(), ds.Tables[0].Rows[i][3].ToString(), ds.Tables[0].Rows[i][4].ToString());
             }
-            AnsiConsole.Write(new FigletText("Customer Details").Centered().Color(Color.Khaki1));
+            AnsiConsole.Write(new FigletText("Product Details").Centered().Color(Color.Khaki1));
             AnsiConsole.Write(table);
         }
 
@@ -130,7 +130,7 @@ namespace ProductManagement2
                 switch (choice)
                 {
                     case "Add New Product":
-                        { 
+                        {
                             Management.AddProduct(con);
                             break;
                         }
@@ -141,19 +141,19 @@ namespace ProductManagement2
                         }
                     case "Get Product":
                         {
-                     
+
                             Management.GetProduct(con);
                             break;
                         }
                     case "Update Product":
                         {
-                            
+
                             Management.UpdateProduct(con);
                             break;
                         }
                     case "Delete Product":
                         {
-                            
+
                             Management.DeleteProduct(con);
                             break;
                         }
