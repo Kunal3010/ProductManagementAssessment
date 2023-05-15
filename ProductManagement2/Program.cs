@@ -54,7 +54,7 @@ namespace ProductManagement2
 
         public static void UpdateProduct(SqlConnection con)
         {
-            Console.WriteLine("Enter the note id you want to Update");
+            Console.WriteLine("Enter the Product id you want to Update");
             int id = Convert.ToInt16(Console.ReadLine());
             SqlDataAdapter adp = new SqlDataAdapter($"Select * from Product where ProductId ={id}", con);
             DataSet ds = new DataSet();
